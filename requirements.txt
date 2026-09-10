@@ -1,16 +1,40 @@
-# Python 3.9 or 3.10 recommended
+# Core ML/DL
 tensorflow==2.12.0
 keras==2.12.0
 numpy>=1.24.0
 pandas>=2.0.0
 scikit-learn>=1.3.0
-matplotlib>=3.7.0
-tqdm>=4.66.0
+
+# Image processing
 pillow>=10.0.0
 opencv-python-headless>=4.8.0
-streamlit>=1.29.0
+
+# OCR
 pytesseract>=0.3.10
 
-# Optional: only needed for SageMaker deployment notebook
-boto3>=1.28.0
-sagemaker>=2.210.0
+# UI
+streamlit>=1.29.0
+matplotlib>=3.7.0
+tqdm>=4.66.0
+
+# PDF support
+PyMuPDF>=1.23.0
+
+# REST API backend
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+
+# Alerting (optional)
+boto3>=1.28.0          # For AWS SES email alerts
+twilio>=8.0.0          # For SMS alerts
+
+# Model optimization (optional)
+# tf2onnx>=1.16.0      # For ONNX export
+# onnxruntime>=1.16.0  # For ONNX inference
+
+# Dashboard (React/Next.js — Node.js required, not pip)
+# See dashboard/package.json for frontend dependencies
+
+# SageMaker deployment (optional)
+# sagemaker>=2.210.0
