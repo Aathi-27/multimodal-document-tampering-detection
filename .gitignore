@@ -1,0 +1,40 @@
+# Environment
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Model artifacts (large files — use Git LFS or S3)
+model/
+model_optimized/
+*.keras
+*.h5
+*.tflite
+*.onnx
+
+# Temporary files
+tempresaved.jpg
+*.tmp
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dashboard
+dashboard/node_modules/
+dashboard/.next/
+dashboard/out/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data
+images/augmented/
+monitoring_data.json
+fusion_ab_results.json
+reports/
